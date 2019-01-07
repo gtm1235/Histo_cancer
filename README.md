@@ -1,3 +1,5 @@
+*** Please note that I wrote my Hello World in Python on September first of 2018 -- after being away from programming fro nearly 20 years -- so I am a little slow in my development :-) Thanks!
+
 # Histo_cancer
 Kaggle competition for Cancer detection in histology slides
 
