@@ -2,7 +2,20 @@
 Kaggle competition for Cancer detection in histology slides
 
 
-Still working Kaggle Update is most recent with 86% at 70K tested .. I am working on the best model while manageing time constraints.
+Still working Kaggle Update is most recent with 86% at 70K tested .. model_checkpoint is present. following info for loading:
+trained on gpu.
+
+checkpoint = {'batch_size': 64,
+                      'valid_transforms': valid_transforms,
+                      'train_transforms': train_transforms,
+                      'model': model,
+                      'classifier': fc,
+                      'criterion': criterion,
+                      'optimizer': optimizer.state_dict(),
+                      'state_dict': model.state_dict()
+                      }
+
+I am working on the best model while manageing time constraints.
 
 Ideally once a proper model of 97% or above is reached to turn the model into production using PyTorch 1.0. I envision a variety of models trained 
 by cell type to more accurately detect cancer. There could be a chip based algorithm on microscopes in histology labs or a web based interface for 
