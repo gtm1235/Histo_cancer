@@ -1,9 +1,19 @@
+*** Please note that I wrote my Hello World in Python on September first of 2018 -- after being away from programming fro nearly 20 years -- so I am a little slow in my development :-) Thanks!
+
 # Histo_cancer
 Kaggle competition for Cancer detection in histology slides
 
+***Not Yet Deployable -- Still training for better accuracy***
 
 Still working Kaggle Update is most recent with 86% at 70K tested .. model_checkpoint is present. following info for loading:
-trained on gpu.
+trained on gpu. Please note that I have not added any instruction to load as I am still fine tuning the project .. I t has turned out to be much more challenging to get the results over 90 percent than I imagined! however in my repositry there is a model uploaded and the parameters in the saved file are as below .. image is 224 x 224 and must be normalized with mean and standard deviation:
+
+([0.485, 0.456, 0.406],
+[0.229, 0.224, 0.225])])
+
+TODO: write all functions after fine tuning model
+TODO: write output to Pandas Dataframe
+TODO: Annotate Notebook
 
 checkpoint = {'batch_size': 64,
                       'valid_transforms': valid_transforms,
